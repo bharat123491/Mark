@@ -1,7 +1,16 @@
+var cursor = document.querySelector(".cursor")
+document.addEventListener("mousemove", function(dets){
+    cursor.style.left = dets.x +(10)+ "px";
+    cursor.style.top = dets.y +(10) + "px";
+})
+
+
+
+
 function locomotiveAnimation() {
     gsap.registerPlugin(ScrollTrigger);
 
-    const locoScroll = new LocomotiveScroll({
+    const locoScroll = new LocomotiveScroll({   
         el: document.querySelector("#main"),
         smooth: true,
 
@@ -131,87 +140,87 @@ function page2Animation() {
     })
 }
 
-function page3VideoAnimation() {
-    // var page3Center = document.querySelector(".page3-center")
-    // var video = document.querySelector("#page3 video")
+// function page3VideoAnimation() {
+//     // var page3Center = document.querySelector(".page3-center")
+//     // var video = document.querySelector("#page3 video")
 
-    // page3Center.addEventListener("click", function () {
-    //     video.play()
-    //     gsap.to(video, {
-    //         transform: "scaleX(1) scaleY(1)",
-    //         opacity: 1,
-    //         borderRadius: 0
-    //     })
-    // })
-    // video.addEventListener("click", function () {
-    //     video.pause()
-    //     gsap.to(video, {
-    //         transform: "scaleX(0.7) scaleY(0)",
-    //         opacity: 0,
-    //         borderRadius: "30px"
-    //     })
-    // })
+//     // page3Center.addEventListener("click", function () {
+//     //     video.play()
+//     //     gsap.to(video, {
+//     //         transform: "scaleX(1) scaleY(1)",
+//     //         opacity: 1,
+//     //         borderRadius: 0
+//     //     })
+//     // })
+//     // video.addEventListener("click", function () {
+//     //     video.pause()
+//     //     gsap.to(video, {
+//     //         transform: "scaleX(0.7) scaleY(0)",
+//     //         opacity: 0,
+//     //         borderRadius: "30px"
+//     //     })
+//     // })
 
 
-    var sections = document.querySelectorAll(".sec-right")
+//     var sections = document.querySelectorAll(".sec-right")
 
-    sections.forEach(function (elem) {
-        elem.addEventListener("mouseenter", function () {
-            elem.childNodes[3].style.opacity = 1
-            elem.childNodes[3].play()
-        })
-        elem.addEventListener("mouseleave", function () {
-            elem.childNodes[3].style.opacity = 0
-            elem.childNodes[3].load()
-        })
-    })
+//     sections.forEach(function (elem) {
+//         elem.addEventListener("mouseenter", function () {
+//             elem.childNodes[3].style.opacity = 1
+//             elem.childNodes[3].play()
+//         })
+//         elem.addEventListener("mouseleave", function () {
+//             elem.childNodes[3].style.opacity = 0
+//             elem.childNodes[3].load()
+//         })
+//     })
 
-}
+// }
 
-function page6Animations() {
-    gsap.from("#btm6-part2 h4", {
-        x: 0,
-        duration: 1,
-        scrollTrigger: {
-            trigger: "#btm6-part2",
-            scroller: "#main",
-            // markers:true,
-            start: "top 80%",
-            end: "top 10%",
-            scrub: true
-        }
-    })
-}
+// function page6Animations() {
+//     gsap.from("#btm6-part2 h4", {
+//         x: 0,
+//         duration: 1,
+//         scrollTrigger: {
+//             trigger: "#btm6-part2",
+//             scroller: "#main",
+//             // markers:true,
+//             start: "top 80%",
+//             end: "top 10%",
+//             scrub: true
+//         }
+//     })
+// }
 
-function page6Animations2(){
-    gsap.from("#btm6-part3 h4", {
-        x: 0,
-        duration: 1,
-        scrollTrigger: {
-            trigger: "#btm6-part3",
-            scroller: "#main",
-            // markers:true,
-            start: "top 80%",
-            end: "top 10%",
-            scrub: true
-        }
-    })
-}
+// function page6Animations2(){
+//     gsap.from("#btm6-part3 h4", {
+//         x: 0,
+//         duration: 1,
+//         scrollTrigger: {
+//             trigger: "#btm6-part3",
+//             scroller: "#main",
+//             // markers:true,
+//             start: "top 80%",
+//             end: "top 10%",
+//             scrub: true
+//         }
+//     })
+// }
 
-function page6Animations3(){
-    gsap.from("#btm6-part4 h4", {
-        x: 0,
-        duration: 1,
-        scrollTrigger: {
-            trigger: "#btm6-part4",
-            scroller: "#main",
-            // markers:true,
-            start: "top 80%",
-            end: "top 10%",
-            scrub: true
-        }
-    })
-}
+// function page6Animations3(){
+//     gsap.from("#btm6-part4 h4", {
+//         x: 0,
+//         duration: 1,
+//         scrollTrigger: {
+//             trigger: "#btm6-part4",
+//             scroller: "#main",
+//             // markers:true,
+//             start: "top 80%",
+//             end: "top 10%",
+//             scrub: true
+//         }
+//     })
+// }
 
 locomotiveAnimation()
 
@@ -219,10 +228,10 @@ navAnimation()
 
 page2Animation()
 
-page3VideoAnimation()
+// page3VideoAnimation()
 
-page6Animations()
-page6Animations2()
-page6Animations3()
+// page6Animations()
+// page6Animations2()
+// page6Animations3()
 
 loadingAnimation()

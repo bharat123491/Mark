@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-family: 'outfit';
+    background-color: #111;
+}
+
+:root{
+    --primary-color : #0BA34E;
+    --secondary-color : rgba(255,255,255,.4);
+}
+
+nav {
+    position: fixed;
+    /* background-color: rgb(0, 255, 68); */
+    display: flex;
+    align-items: flex-start;
+    height: 12vh;
+    width: 100%;
+    padding: 2vw 10.4vw;
+    justify-content: space-between;
+    background-color: #111;
+    z-index: 10;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+nav h1 {
+    font-size: 1.6vw;
+}
+
+.nav-part2 {
+    display: flex;
+    gap: 2vw;
+    align-items: flex-start;
+    padding: 2.2vh 0;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-part2 h4 {
+    font-size: 0.73vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2.6vw;
+}
+
+.nav-part2 h5 {
+    margin-bottom: 1vw;
+    /* background-color: red; */
+    display: none;
+    overflow: hidden;
+}
+
+.nav-part2 h5 span {
+    font-size: 0.77vw;
+    font-weight: 400;
+    transform: translateY(25px);
+    display: inline-block;
+}
+
+nav button {
+    background-color: #0BA34E;
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    font-size: 0.85vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 50px;
+    color: white;
+}
+
+nav button svg {
+    height: 0.8vw;
+    margin-left: 1.6vw;
+}
+
+#nav-bottom {   
+    width: 79%;
+    height: 0vh;
+    position: absolute;
+    /* background-color: red; */
+    top: 100%;
+    background-color: #111;
+    z-index: 9;
+    border-bottom: 1px solid #fff;
+}
+
+
+.cursor{
+    height: 20px;
+    width: 20px;
+    background-color: #0BA34E;
+    border-radius: 50%;
+    z-index: 9999;
+    position :fixed;
+
+}
+
+.container{
+    height: 100vh;
+}
+
+.service-section{
+    padding-top: 20vh;
+    min-height: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.service-section h2{
+    color: #fff;
+    font-size: 2vw;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.service-section h2::after{
+    position: absolute;
+    content: " ";
+    top: 15px;
+    left: -30px;
+    height: 0;
+    width: 0;
+    border-top : 20px solid transparent;
+    border-left: 20px solid var(--primary-color);
+}
+
+.service-section h2::before{
+    position: absolute;
+    content: " ";
+    top: 15px;
+    right: -30px;
+    height: 0;
+    width: 0;
+    border-top : 20px solid transparent;
+    border-right: 20px solid var(--primary-color);
+}
+
+#paragraph{
+    /* padding-top: 12vh; */
+    /* display: flex; */
+    font-size: 2vh;
+    font-weight: 400;
+    color: white;
+    width: 50%;
+    font-size: 1vw;
+    text-align: center;
+    line-height: 1.5vw;
+    white-space: 1px;
+    margin-bottom: 1vw;
+    text-transform: uppercase;
+}
+i{
+    color: #0BA34E;
+    font-size: 2vw;
+    margin-bottom: 1vw;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    z-index: 9;
+    gap: 3vw;
+}
+
+.card{
+    margin-top: 2vw;
+    height: 40vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 0 8%;   
+    background: rgb(65,62,105);
+    position: relative;
+}
+
+.card::before{
+    position: absolute;
+    content: " ";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: #0BA34E;
+    transition: .6s;
+    transform: rotate(0deg);
+    z-index: -1;
+}
+
+.cards .card:hover.card::before{
+    transform: rotate(10deg);
+}
+
+.content{
+    font-size: 1.05vw;
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+.content p{
+    margin-top: 1vw;
+}
+
+.cards .card h3{
+    font-size: 1.6vw;
+    color: White;
+    margin-bottom: .6vw;
+    font-weight: 500;
+}
+
+@media(max-width: 1100px){
+    .service-section h2{
+        margin-top: 30px;
+    }
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .service-section .paragraph{
+        width: 80%;
+    }
+}
+
+@media(max-width:900px){
+    .cards .card{
+        height: 300px;
+        width: 300px;
+        margin: 20px 0;
+    }
+}
