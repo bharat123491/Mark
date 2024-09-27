@@ -111,11 +111,12 @@ nav button svg {
 }
 
 #page1 h1 {
-    font-size: 3.7vw;
+    font-size: 5vw;
     text-transform: uppercase;
     font-weight: 900;
     line-height: 3vw;
     margin-bottom: .7vw;
+    padding-top: .5vw;
 }
 
 #page1 h1 svg {
@@ -130,7 +131,8 @@ a{
     text-decoration: none;
 }
 
-#new{
+.new{
+    font-size: 3.7vw;
     padding-top: .7vw;
     /* border-top: .4vw #0BA34E solid; */
 }

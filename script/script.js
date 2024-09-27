@@ -61,7 +61,7 @@ function loadingAnimation() {
         opacity: 0,
         delay: -0.2
     })
-    tl.from("#page1 h1, #page1 p, #page1 div", {
+    tl.from("#page1 h1, #page1 p, #page1 div, #page1 h2", {
         opacity: 0,
         duration: 0.5,
         stagger: 0.2

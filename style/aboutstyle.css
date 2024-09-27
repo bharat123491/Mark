@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500&display=swap");
+
+/* * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ddd;
+} */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  font-family: 'outfit';
+  background-color: #111;
+}
+
+nav {
+  position: fixed;
+  /* background-color: rgb(0, 255, 68); */
+  display: flex;
+  align-items: flex-start;
+  height: 12vh;
+  width: 100%;
+  padding: 2vw 10.4vw;
+  justify-content: space-between;
+  background-color: #111;
+  z-index: 10;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+nav h1 {
+  font-size: 1.6vw;
+}
+
+.nav-part2 {
+  display: flex;
+  gap: 2vw;
+  align-items: flex-start;
+  padding: 2.2vh 0;
+  position: relative;
+  z-index: 10;
+}
+
+.nav-part2 h4 {
+  font-size: 0.73vw;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 2.6vw;
+}
+
+.nav-part2 h5 {
+  margin-bottom: 1vw;
+  /* background-color: red; */
+  display: none;
+  overflow: hidden;
+}
+
+.nav-part2 h5 span {
+  font-size: 0.77vw;
+  font-weight: 400;
+  transform: translateY(25px);
+  display: inline-block;
+}
+
+nav button {
+  background-color: #0BA34E;
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  font-size: 0.85vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 50px;
+  color: white;
+}
+
+nav button svg {
+  height: 0.8vw;
+  margin-left: 1.6vw;
+}
+
+#nav-bottom {   
+  width: 79%;
+  height: 0vh;
+  position: absolute;
+  /* background-color: red; */
+  top: 100%;
+  background-color: #111;
+  z-index: 9;
+  border-bottom: 1px solid #fff;
+}
+
+
+.cursor{
+  height: 20px;
+  width: 20px;
+  background-color: #0BA34E;
+  border-radius: 50%;
+  z-index: 9999;
+  position :fixed;
+
+}
+
+.about-us {
+  padding-top: 16vh;
+  width: 100%;
+}
+
+.about-us h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #0BA34E;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 50px;
+}
+
+.about-us h1::after {
+  content: "";
+  height: 5px;
+  width: 200px;
+  background-color: #0BA34E;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+
+.wrapper {
+  padding: 0px 60px;
+  margin: 30px auto;
+}
+
+.content {
+  width: 60%;
+  float: left;
+  text-align: left;
+  padding: 0px 30px;
+}
+
+.content h3 {
+  color: #ffffff;
+  letter-spacing: 1px;
+  padding-bottom: 1vw;
+  font-size: 1.23vw;
+  text-align: justify;
+}
+
+.content p {
+  font-family: sans-serif;
+  /* font-size: 17px; */
+  color: #fff;
+  /* margin-top: 20px; */
+  padding-bottom: 1vw;
+}
+
+.content .button {
+  margin-top: 40px;
+}
+
+.content .button a {
+  color: #fff;
+  background-color: #0BA34E;
+  border: 1px solid #0BA34E;
+  padding: 10px 35px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.content .button a:hover {
+  background-color: #fff;
+  color: #0BA34E;
+}
+
+.content .social {
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+.content .social a {
+  text-decoration: none;
+  color: #222;
+  font-size: 25px;
+  padding: 0px 7px;
+}
+
+.content .social a:hover {
+  color: #0BA34E;
+  transition: 1s ease;
+}
+
+.content .social i {
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border: 1px solid #222;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+}
+
+.image-section {
+  width: 40%;
+  height: 30vh;
+  float: right;
+  padding: 0px 30px;
+}
+
+h4{
+  padding-bottom: .5vw;
+  color: #fff;
+  font-size: 1.5vw;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  height: auto;
+}
+.p22{
+  font-size: 1.2vw;
+}
+
+@media screen and (max-width: 900px) {
+  .about-us {
+    width: 100%;
+    padding-top: 17vw;
+  }
+
+  .about-us h1 {
+    font-size: 32px;
+  }
+
+  .content {
+    width: 100%;
+    float: none;
+  }
+
+  .content .button {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .content .button a {
+    padding: 8px 25px;
+  }
+
+  .content .social {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .content .social a {
+    font-size: 21px;
+  }
+
+  .image-section {
+    float: none;
+    width: 100%;
+    margin-top: 25px;
+  }
+  h4{
+    font-size: 8vw;
+  }
+}
