@@ -8,59 +8,84 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="./style/contact.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
 </head>
 <body>
-    <nav>
-        <!-- <h1>LAZAREV.</h1> -->
-        <div>
-            <a href="index.html"><h1>Dev<span style="color :#0BA34E">N</span>mark</h1>
-                <h1>Solution<span style="color :#0BA34E">.</span></h1></a>
-        </div>
-        <div class="nav-part2">
-            <div class="nav-elem">
-                <a href="./index.html"><h4>Home</h4></a>
-                <h5><span>Home</span></h5>
-            </div>
-            <div class="nav-elem">
-                <a href="./OurServices.html"><h4>Services</h4></a>
-                <h5><span>AI & ML</span></h5>
-                <h5><span>Fintech</span></h5>
-                <h5><span>Real Estate</span></h5>
-                <h5><span>E-commerce</span></h5>
-                <h5><span>Web 3</span></h5>
-            </div>
-            <div class="nav-elem">
-                <h4>UIUX Design</h4>
-                <h5><span>Fintech</span></h5>
-                <h5><span>Real Estate</span></h5>
-                <h5><span>E-commerce</span></h5>
-                <h5><span>Web 3</span></h5>
-            </div>
-            <div class="nav-elem">
-                <a href="about.html"><h4>About Agency</h4></a>
-                <h5><span>Fintech</span></h5>
-                <h5><span>Real Estate</span></h5>
-                <h5><span>E-commerce</span></h5>
-                <h5><span>Web 3</span></h5>
-            </div>
-            
-            <div class="nav-elem">
-                <a href="./Contactus.html"><h4>Contact</h4></a>
-                <h5><span>Fintech</span></h5>
-                <h5><span>Real Estate</span></h5>
+    <div class="header" id="header">
+        <nav class="nav" id="container">
+            <a href="index.html">
+                <h1>Dev<span style="color :#0BA34E">N</span>mark</h1>
+                <h1>Solution<span style="color :#0BA34E">.</span></h1>
+            </a>
 
-                <h5><span>Web 3</span></h5>
-            </div>
-        </div>
-        <a href="./Contactus.html"><button>Let's Talk <svg fill="none" viewBox="0 0 20 20">
-                <path fill="#fff"
-                    d="M2.5 14.375V17.5h3.125l9.217-9.217-3.125-3.125L2.5 14.375Zm14.758-8.508a.83.83 0 0 0 0-1.175l-1.95-1.95a.83.83 0 0 0-1.175 0l-1.525 1.525 3.125 3.125 1.525-1.525Z">
-                </path>
-            </svg></button></a>
-        <div id="nav-bottom">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
 
-        </div>
-    </nav>
+                    <li class="nav__item">
+                        <a href="./page2/services.html" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Services</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>UI/UX Designs</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>About Us</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="Contactus.html" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                </div>
+
+                <div class="nav__social">
+                    <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+
+                    <a href="https://github.com/" target="_blank" class="nav__social-link">
+                        <i class="ri-facebook-circle-line"></i>
+                    </a>
+
+                    <!-- <a href="https://dribbble.com/" target="_blank" class="nav__social-link">
+                    <i class="ri-dribbble-line"></i>
+                 </a> -->
+
+                    <a href="https://www.linkedin.com/" target="_blank" class="nav__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </div>
 
     <div class="cursor"></div>
 
@@ -91,5 +116,6 @@
         integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./script/contactscript.js"></script>
+    <script src="./script/nav.js"></script>
 </body>
 </html>

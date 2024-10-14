@@ -1,3 +1,7 @@
+// script for slider 
+
+
+
 var cursor = document.querySelector(".cursor")
 document.addEventListener("mousemove", function(dets){
     cursor.style.left = dets.x +(10)+ "px";
@@ -48,5 +52,10 @@ function navAnimation() {
 }
 
 
+
+
 navAnimation()
+
+
+
 

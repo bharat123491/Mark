@@ -51,13 +51,28 @@ function loadingAnimation() {
         duration: 0.2,
         delay: 0.2
     })
-    tl.from("#page1", {
-        transform: "scaleX(0.7) scaleY(0.2) translateY(80%)",
+    // tl.from(".video-background", {
+    //     opacity: 0,
+    //     duration: 2,
+    //     // delay: 0.2
+    // })
+    // tl.from("#page1", {
+    //     transform: "scaleX(0.7) scaleY(0.7) translateY(80%)",
+    //     borderRadius: "150px",
+    //     duration: 2,
+    //     ease: "expo.out"
+    // })
+    tl.from(".video-background", {
+        transform: "scaleX(0) scaleY(0)",
         borderRadius: "150px",
         duration: 2,
         ease: "expo.out"
     })
     tl.from("nav", {
+        opacity: 0,
+        delay: -0.1 
+    })
+    tl.from("#header", {
         opacity: 0,
         delay: -0.2
     })
@@ -140,27 +155,27 @@ function page2Animation() {
     })
 }
 
-// function page3VideoAnimation() {
-//     // var page3Center = document.querySelector(".page3-center")
-//     // var video = document.querySelector("#page3 video")
+function page3VideoAnimation() {
+    var page3Center = document.querySelector(".page3-center")
+    var video = document.querySelector("#page3 video")
 
-//     // page3Center.addEventListener("click", function () {
-//     //     video.play()
-//     //     gsap.to(video, {
-//     //         transform: "scaleX(1) scaleY(1)",
-//     //         opacity: 1,
-//     //         borderRadius: 0
-//     //     })
-//     // })
-//     // video.addEventListener("click", function () {
-//     //     video.pause()
-//     //     gsap.to(video, {
-//     //         transform: "scaleX(0.7) scaleY(0)",
-//     //         opacity: 0,
-//     //         borderRadius: "30px"
-//     //     })
-//     // })
-
+    page3Center.addEventListener("click", function () {
+        video.play()
+        gsap.to(video, {
+            transform: "scaleX(1) scaleY(1)",
+            opacity: 1,
+            borderRadius: 0
+        })
+    })
+    video.addEventListener("click", function () {
+        video.pause()
+        gsap.to(video, {
+            transform: "scaleX(0.7) scaleY(0)",
+            opacity: 0,
+            borderRadius: "30px"
+        })
+    })
+}
 
 //     var sections = document.querySelectorAll(".sec-right")
 
@@ -228,10 +243,29 @@ navAnimation()
 
 page2Animation()
 
-// page3VideoAnimation()
+page3VideoAnimation()
 
 // page6Animations()
 // page6Animations2()
 // page6Animations3()
 
 loadingAnimation()
+
+/*=============== SHOW MENU ===============*/
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close')
+
+/* Menu show */
+if(navToggle){
+   navToggle.addEventListener('click', () =>{
+      navMenu.classList.add('show-menu')
+   })
+}
+
+/* Menu hidden */
+if(navClose){
+   navClose.addEventListener('click', () =>{
+      navMenu.classList.remove('show-menu')
+   })
+}

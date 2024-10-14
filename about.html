@@ -1,124 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <title>About Us Page</title>
-    <link rel="shortcut icon" href="./Images/DevNmark Logo.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <link rel="stylesheet" href="style/Aboutstyle.css">
-  </head>
 
-  <body>
-    <nav>
-      <!-- <h1>LAZAREV.</h1> -->
-      <div>
-        <a href="index.html"><h1>Dev<span style="color :#0BA34E">N</span>mark</h1>
-          <h1>Solution<span style="color :#0BA34E">.</span></h1></a>
-      </div>
-      <div class="nav-part2">
-          <div class="nav-elem">
-              <a href="./index.html"><h4>Home</h4></a>
-              <h5><span>Home</span></h5>
-          </div>
-          <div class="nav-elem">
-              <a href="./OurServices.html"><h4>Services</h4></a>
-              <h5><span>AI & ML</span></h5>
-              <h5><span>Fintech</span></h5>
-              <h5><span>Real Estate</span></h5>
-              <h5><span>E-commerce</span></h5>
-              <h5><span>Web 3</span></h5>
-          </div>
-          <div class="nav-elem">
-              <h4>UIUX Design</h4>
-              <h5><span>Fintech</span></h5>
-              <h5><span>Real Estate</span></h5>
-              <h5><span>E-commerce</span></h5>
-              <h5><span>Web 3</span></h5>
-          </div>
-          <div class="nav-elem">
-            <a href="about.html"><h4>About Agency</h4></a>
-              <h5><span>Fintech</span></h5>
-              <h5><span>Real Estate</span></h5>
-              <h5><span>E-commerce</span></h5>
-              <h5><span>Web 3</span></h5>
-          </div>
-          
-          <div class="nav-elem">
-              <a href="./Contactus.html"><h4>Contact</h4></a>
-              <h5><span>Fintech</span></h5>
-              <h5><span>Real Estate</span></h5>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <title>About Us Page</title>
+  <link rel="shortcut icon" href="./Images/DevNmark Logo.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <link rel="stylesheet" href="style/Aboutstyle.css">
+  <link rel="stylesheet" href="./assets/css/nav.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
 
-              <h5><span>Web 3</span></h5>
-          </div>
-      </div>
-      <a href="./Contactus.html"><button>Let's Talk <svg fill="none" viewBox="0 0 20 20">
-              <path fill="#fff"
-                  d="M2.5 14.375V17.5h3.125l9.217-9.217-3.125-3.125L2.5 14.375Zm14.758-8.508a.83.83 0 0 0 0-1.175l-1.95-1.95a.83.83 0 0 0-1.175 0l-1.525 1.525 3.125 3.125 1.525-1.525Z">
-              </path>
-          </svg></button></a>
-      <div id="nav-bottom">
+<body>
+  <div class="header" id="header">
+    <nav class="nav" id="container">
+      <a href="index.html">
+        <h1>Dev<span style="color :#0BA34E">N</span>mark</h1>
+        <h1>Solution<span style="color :#0BA34E">.</span></h1>
+      </a>
 
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">
+              <i class="ri-arrow-right-up-line"></i>
+              <span>Home</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="./page2/services.html" class="nav__link">
+              <i class="ri-arrow-right-up-line"></i>
+              <span>Services</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <i class="ri-arrow-right-up-line"></i>
+              <span>UI/UX Designs</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">
+              <i class="ri-arrow-right-up-line"></i>
+              <span>About Us</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="Contactus.html" class="nav__link">
+              <i class="ri-arrow-right-up-line"></i>
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Close button -->
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-large-line"></i>
+        </div>
+
+        <div class="nav__social">
+          <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
+            <i class="ri-instagram-line"></i>
+          </a>
+
+          <a href="https://github.com/" target="_blank" class="nav__social-link">
+            <i class="ri-facebook-circle-line"></i>
+          </a>
+
+          <!-- <a href="https://dribbble.com/" target="_blank" class="nav__social-link">
+                  <i class="ri-dribbble-line"></i>
+               </a> -->
+
+          <a href="https://www.linkedin.com/" target="_blank" class="nav__social-link">
+            <i class="ri-linkedin-box-line"></i>
+          </a>
+        </div>
       </div>
-  </nav>
+
+      <!-- Toggle button -->
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-line"></i>
+      </div>
+    </nav>
+  </div>
 
   <div class="cursor"></div>
 
-    <section>
-      <div class="about-us">
-        <h1>about us</h1>
+  <div>
+    <div class="main-about swiper mySwiper-about">
+      <div class="wrapper-about swiper-wrapper">
+        <div class="slide-about swiper-slide">
+          <video src="video/about.mp4?v=1" type="video/mp4" autoplay loop muted class="image-about"> </video>
 
-        <div class="wrapper">
-          <div class="content">
-            <h3>
-              Devnmark_solution is a forward thinking technology & management company founded in JAN 2024 as a lrish web agency. A company dedicated to provide services to their  clients across multiple industries around the world which helps business unlock their  full potential through innovative tech solutions and expert management strategies. We focus  on the intersection of technology and management, providing a full spectrum services designed to address the critical needs of our clients. Our ability to understand customer preferences, wants,and provide innovative solutions which lead to their business growth.
-            </h3>
+          <div class="image-data-about">
+            <h2>
+              Welcome to<br />
+              DevNmark solution
+            </h2>
+            <span class="text-about">Innovation Today leading tomorrow.</span><br>
+            <a href="./Contactus.html" class="button">Connect</a>
+          </div>
+        </div>
+        <!-- <div class="slide-about swiper-slide">
+          <img src="../website-image/insight.png" alt="" class="image-about" />
+          <div class="image-data-about">
 
-            
-            <!-- <h4>Website Development: <br></h4>
-            <p>We create custom, high-performance websites that are visually stunning.</p>
+            <h2>
+              Insight<br />
 
-            <h4>Digital Marketing: <br></h4>
-            <p>Effective & efficient digital marketing strategies drive traffic, increase engagement, and convert leads into loyal customers. From SEO to social media, we’ve got you covered.</p>
+            </h2>
 
-            <h4>Brand Management: <br></h4>
-            <p>unlock the power of your brand with expert brand management services.We help to shape your identity and maintain consistency across all channels.</p>
+            <a href="#" class="button">About Us</a>
+          </div>
+        </div>
+        <div class="slide-about swiper-slide">
+          <video src="../website-image/videobg.mp4" alt="" class="image-about" autoplay> </video>
 
-            <h4>Product Listing Services: <br></h4>
-            <p>Optimize your product listings for maximum visibility and sales. We ensure your products are presented in the best possible light on e-commerce platforms.</p> -->
+          <div class="image-data-about">
 
-            <p class="p22">Let Devnmark Solutions be your partner in digital success, helping you transform your vision into reality!</p>
 
-            <div class="button">
-              <a href="">read more</a>
+            <a href="#" class="button">About Us</a>
+          </div>
+        </div>
+
+        <div class="slide-about swiper-slide">
+          <img src="images/img2.jpg" alt="" class="image-about" />
+          <div class="image-data-about">
+
+            <h2>
+              Welcome to<br />
+              DevNmark Solution
+            </h2>
+            <span class="text-about">Innovation Today leading tomorrow.</span><br>
+            <a href="#" class="button">About Us</a>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="flex-container">
+    <div class="flex-slide home">
+      <div class="flex-title flex-title-home"> Mission</div>
+      <div class="flex-about flex-about-home">
+        <p>Click here to navigate to the home section of the website</p>
+      </div>
+    </div>
+    <div class="flex-slide about">
+      <div class="flex-title">Quality</div>
+      <div class="flex-about">
+        <p>Click here to navigate to the About section of the website</p>
+      </div>
+    </div>
+    <div class="flex-slide work">
+      <div class="flex-title">Clarity</div>
+      <div class="flex-about">
+        <p>Listing relevant snippets of work:</p>
+        <ul>
+          <li>First piece of work</li>
+          <li>Second piece of work</li>
+          <li>Third piece of work</li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex-slide contact">
+      <div class="flex-title">Result</div>
+      <div class="flex-about">
+        <p>Use the contact form below</p>
+        <form class="contact-form">
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="team">
+      <div class="wrapper-team">
+        <div class="title-team">
+          <h4>Meet Our Team</h4>
+        </div>
+        <div class="card-Container-team">
+          <div class="card-team">
+            <div class="imbBx-team">
+              <img src="../website-image/pic01.jpg" alt="">
             </div>
-
-            <div class="social">
-              <a href=""><i class="fab fa-facebook"></i></a>
-
-              <a href=""><i class="fab fa-twitter"></i></a>
-              <a href=""><i class="fab fa-instagram"></i></a>
+            <div class="content-team">
+              <div class="contentBx-team">
+                <h3>Yashika Chaudhary<br><span>Analyst</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="image-section">
-            <img class="img" src="Images/5135416_2667054.jpg">
+
+          <div class="card-team">
+            <div class="imbBx-team">
+              <img src="../website-image/Bharat.png.jpg" alt="">
+            </div>
+            <div class="content-team">
+              <div class="contentBx-team">
+                <h3>Bharat Kumar<br><span>Founder</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card-team">
+            <div class="imbBx-team">
+              <img src="../website-image/pic03.jpg" alt="">
+            </div>
+            <div class="content-team">
+              <div class="contentBx-team">
+                <h3>Jaid Khan<br><span>Founder</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card-team">
+            <div class="imbBx-team">
+              <img src="../website-image/pic04.jpg" alt="">
+            </div>
+            <div class="content-team">
+              <div class="contentBx-team">
+                <h3>Kritika Bist<br><span>Digital Marketer</span></h3>
+              </div>
+              <ul class="sci">
+                <li style="--i: 1">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li style="--i: 2">
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li style="--i: 3">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./script/contactscript.js"></script>
-  </body>
+    </div>
+  </div>
+  <!-- html for webbizz image  -->
+
+  <div class="webbiz">
+    <img src="../website-image/001.jpg" alt="">
+    <h1>What do you choose?</h1>
+    <p>Align or Shine?</p>
+    <a href="#"> Shine <span class="arrow">&#8594;</span></a>
+  </div>
+
+
+  <!-- html for footer  -->
+
+  <footer>
+    <div class="container-f">
+      <div class="row">
+        <div class="col" id="company">
+          <img src="images/logo.png" alt="" class="logo">
+          <p>Innovation tomorrow leading today - Where technology power's your Brand <br>
+            We are specialized in designings, make your business a brand.
+            Try our services.
+          </p>
+          <div class="social">
+            <a href="https://www.facebook.com/people/DevNmark-Solution/61565739009987/?mibextid=ZbWKwL"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/devnmark/profilecard/"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/devnmarksolution/"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+
+
+        <div class="col" id="services">
+          <h3>Services</h3>
+          <div class="links">
+            <a href="#">Website Development</a>
+            <a href="#">Digital Marketing</a>
+            <a href="#">Brand Management</a>
+            <a href="#">Product Listing</a>
+          </div>
+        </div>
+
+        <div class="col" id="useful-links">
+          <h3>Links</h3>
+          <div class="links">
+            <a href="../index.html">Home</a>
+            <a href="../page2/services.html">Services</a>
+            <a href="#">UI/UX Design</a>
+            <a href="../about.html">About us</a>
+            <a href="../Contactus.html">Contact us</a>
+          </div>
+        </div>
+
+        <div class="col" id="contact">
+          <h3>Contact</h3>
+          <div class="contact-details">
+            <i class="fa fa-location"></i>
+            <p>Gurugran, Haryana <br>122001</p>
+          </div> <br>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>+91-9416017344</p>
+
+          </div><br>
+          <div class="contact-details">
+            <i class="fal fa-envelope"></i>
+            connect@devnmark.in
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form">
+          <form action="">
+            <input type="text" placeholder="Email here..." style="font-size: 1.6vw; padding-left: .5vw;">
+            <button><i class="fa fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+  integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+  integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./script/contactscript.js"></script>
+<script src="./script/nav.js"></script>
+<script src="./script/about2.js"></script>
+
+<!-- Swiper JS -->
+<script src="./script/about.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  const slides = document.querySelectorAll('.flex-slide');
+
+  slides.forEach(function (slide) {
+    slide.addEventListener('mouseenter', function () {
+      const title = slide.querySelector('.flex-title');
+      const about = slide.querySelector('.flex-about');
+      title.style.transform = 'rotate(0deg)';
+      title.style.top = '10%';
+      about.style.opacity = '1';
+    });
+
+    slide.addEventListener('mouseleave', function () {
+      const title = slide.querySelector('.flex-title');
+      const about = slide.querySelector('.flex-about');
+      title.style.transform = 'rotate(90deg)';
+      title.style.top = '15%';
+      about.style.opacity = '0';
+    });
+  });
+
+
+
+
+  var swiper = new Swiper(".mySwiper-about", {
+    slidesPerView: 1,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+
+</body>
+
 </html>
