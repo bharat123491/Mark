@@ -25,13 +25,13 @@
 }
 a {
   outline: none;
-  /* box-shadow: none; */
+  box-shadow: none;
   -webkit-tap-highlight-color: transparent; /* For mobile browsers */
 }
 
 a:focus, a:hover {
   outline: none;
-  /* box-shadow: none; */
+  box-shadow: none;
   -webkit-tap-highlight-color: transparent; /* For mobile browsers */
 }
 
@@ -47,12 +47,12 @@ a:focus, a:hover {
   
   #container {
   
-    /* margin-inline: 1.5rem; */
+    margin-inline: 1.5rem;
   }
 
   /*=============== HEADER & NAV ===============*/
   .header {
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -73,10 +73,6 @@ a:focus, a:hover {
     z-index: 10;
 }
 
-#container a h1{
-  color: #fff;
-}
-
 nav h1 {
     font-size: 1.6vw;
 }
@@ -90,7 +86,9 @@ nav h1 {
   ul {
     list-style: none;
   }
- 
+  .header{
+    margin-left: -3vh;
+  }
   a {
     text-decoration: none;
   }
@@ -193,8 +191,6 @@ nav h1 {
     visibility: hidden;
     transition: opacity .4s, visibility .4s;
   }
-
-
   
   .nav__link span {
       /* font-size: 1.1vw; */

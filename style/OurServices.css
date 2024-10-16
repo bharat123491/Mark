@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+a {
+    outline: none;
+    box-shadow: none;
+    -webkit-tap-highlight-color: transparent; /* For mobile browsers */
+  }
+  
+  a:focus, a:hover {
+    outline: none;
+    box-shadow: none;
+    -webkit-tap-highlight-color: transparent; /* For mobile browsers */
+  }
+
 html,
 body {
     height: 100%;

@@ -6,6 +6,18 @@
     box-sizing: border-box;
 }
 
+a {
+  outline: none;
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent; /* For mobile browsers */
+}
+
+a:focus, a:hover {
+  outline: none;
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent; /* For mobile browsers */
+}
+
 body {
     /* background-color: #111; */
     color: white;
@@ -533,6 +545,26 @@ div.text-we-offer p{
         gap: 30px;
     }
   }
+  #button99{
+    display: none;
+  }
+
+  @media only screen and (max-width: 455px){
+    #button90{
+      display: none;
+    }
+    #button99{
+      display: block;
+    }
+    .we-offer-flex{
+      display : flex;
+      flex-direction : column;
+    }
+  
+    #up{
+      margin-top: -2.5vh;
+    }
+   }
   
   @media (max-width: 480px) {
     .text-chose h1 {
@@ -833,6 +865,28 @@ span.arrow{
    height: 8vw;;
  }
 }
+@media only screen and (max-width: 455px){
+  .slide-about .image-about{
+
+    display: none;
+
+ } 
+
+ .slide-about .about-video{
+
+  display: block;
+ }
+
+  .input33{
+  min-width: 15vh;
+  min-height: 5vh;
+ }
+ .form button{
+  width: 5vh;
+  height: 5vh;
+ }
+
+}
 
 
 
@@ -871,13 +925,23 @@ span.arrow{
   --z-tooltip: 10;
   --z-fixed: 100;
 }
+a {
+  outline: none;
+  /* box-shadow: none; */
+  -webkit-tap-highlight-color: transparent; /* For mobile browsers */
+}
 
+a:focus, a:hover {
+  outline: none;
+  /* box-shadow: none; */
+  -webkit-tap-highlight-color: transparent; /* For mobile browsers */
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-#container {
+/* #container {
   
     margin-inline: 1.5rem;
-  }
+  } */
 
   html {
     scroll-behavior: smooth;
@@ -885,7 +949,7 @@ span.arrow{
   
   #container {
   
-    margin-inline: 1.5rem;
+    /* margin-inline: 1.5rem; */
   }
 
   /*=============== HEADER & NAV ===============*/
@@ -904,23 +968,35 @@ span.arrow{
     display: flex;
     align-items: flex-start;
     height: 12vh;
-    max-width: 100%;
+    width: 100%;
     padding: 2vw 10.4vw;
     justify-content: space-between;
     /* background-color: #111; */
     z-index: 10;
 }
 
+#container a h1{
+  color: #fff;
+}
+
 nav h1 {
     font-size: 1.6vw;
-    color: #fff;
+}
+@media only screen and ( max-width: 455px ) {
+  .nav h1 {
+    font-size: 1.8vh;
+  }
+
+  i{
+    font-size: 2.7vh;
+  }
 }
 
 
   ul {
     list-style: none;
   }
-  
+ 
   a {
     text-decoration: none;
   }
@@ -969,6 +1045,14 @@ nav h1 {
       visibility: hidden;
       transition: transform .4s ease-out, visibility .4s;
     }
+
+    @media only screen and (max-width: 455px){
+      .nav__item span{
+        
+    font-size: 4vh;
+      }
+   
+    }
   
     .nav__item:nth-child(1) {
       transition-delay: .1s;
@@ -1015,6 +1099,8 @@ nav h1 {
     visibility: hidden;
     transition: opacity .4s, visibility .4s;
   }
+
+
   
   .nav__link span {
       /* font-size: 1.1vw; */
@@ -1063,9 +1149,10 @@ nav h1 {
   }
   
   .nav__social-link {
-    color: #0BA34E;
+    color: var(--white-color);
     font-size: 1.5rem;
     transition: transform .4s;
+    color: #0BA34E;
   }
   
   .nav__social-link:hover {
@@ -1120,5 +1207,27 @@ nav h1 {
     }
     .nav__link span{
       font-size: 1.1vw;
+    }
+  }
+
+  @media only screen and (max-width: 455px){
+    #page1{
+    height: 70vh;
+    }
+    
+    #page1 h1 {
+      font-size: 6.5vh;
+      margin-left: 1vh;
+      margin-right: 1vh;
+      line-height: normal;
+      
+    }
+    #page1 p{
+      font-size: 3vh;
+      line-height: normal;
+      margin-bottom: 5vh;
+      margin-left: 1vh;
+      margin-right: 1vh;
+      
     }
   }

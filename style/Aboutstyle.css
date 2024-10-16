@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 /* * {
   margin: 0px;
   padding: 0px;
@@ -20,6 +22,17 @@ body {
   box-sizing: border-box;
   color: white;
 }
+a {
+  outline: none;
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent; /* For mobile browsers */
+}
+
+a:focus, a:hover {
+  outline: none;
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent; /* For mobile browsers */
+}
 
 html,
 body {
@@ -27,10 +40,16 @@ body {
   width: 100%;
 }
 
+
 body{
   font-family: 'outfit';
-  background-color: #111;
+  /* background-color: #111; */
 }
+
+.main{
+  margin-top: -7.85vw;
+}
+
 
 nav {
   position: fixed;
@@ -122,7 +141,33 @@ nav button svg {
   z-index: 9999;
   position :fixed;
 
+
 }
+@media only screen and (max-width: 460px){
+  .cursor {
+    display: none;
+  }
+  .main{
+    margin-top: -10vh;
+  }
+  .main-about {
+    height: 100vh;
+    width: 100%;
+  }
+  .webbiz img{
+    max-height: 15vh;
+  }
+  div.webbiz h1{
+    font-size: 2vh;
+  }
+  div.webbiz p{
+    font-size: 1.7vh;
+  }
+  div.webbiz a{
+    font-size: 2vh
+  }
+}
+
 
 /* css for image slider  */
 
@@ -139,7 +184,7 @@ nav button svg {
 
 
 .main-about {
-  height: 100vh;
+  height: 101vh;
   width: 100%;
 }
 .wrapper-about,
@@ -159,11 +204,24 @@ nav button svg {
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
+
+
 .slide-about .image-about {
+  display: block;
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
+
+
+.slide-about .about-video{
+
+display: none;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .slide-about .image-data-about {
   position: absolute;
   top: 50%;
@@ -182,6 +240,14 @@ nav button svg {
   font-size: 70px;
   font-weight: 600;
   color: #fff;
+}
+@media only screen and (max-width: 455px){
+  .image-data-about h2{
+    font-size: 8vh;
+  }
+  .image-data-about span.text-about {
+    font-size: 2.5vh;
+}
 }
 a.button {
   display: inline-block;
@@ -280,6 +346,9 @@ body {
 @media screen and (max-width: 768px) {
   .flex-title {
       transform: rotate(0deg) !important;
+  }
+  .flex-about p{
+    font-size: 2.3vh;
   }
 }
 
@@ -711,7 +780,7 @@ height: 40vh;
 
 .webbiz p{
   position: absolute;
-  top: 49%; 
+  top: 52%; 
   font-weight: 700;
   left: 6%;
   font-size: 3vw; 
@@ -888,6 +957,32 @@ footer{
  height: 8vw;;
 }
 }
+
+
+
+@media only screen and (max-width: 455px){
+  .slide-about .image-about{
+
+    display: none;
+
+ } 
+
+ .slide-about .about-video{
+
+  display: block;
+ }
+
+  .input33{
+  min-width: 15vh;
+  min-height: 5vh;
+ }
+ .form button{
+  width: 5vh;
+  height: 5vh;
+ }
+
+}
+
 
 
 
